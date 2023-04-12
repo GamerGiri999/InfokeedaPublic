@@ -1,0 +1,21 @@
+var links = document.querySelectorAll('a[href^="http"], a[href^="//"]');
+
+// Define excluded URLs
+var excludedUrls = [
+  'https://google.com',
+  'https://youtube.com'
+];
+
+// Loop through the links
+for (var i = 0; i < links.length; i++) {
+  var link = links[i];
+
+  // Check if link host is not the same as current host and link is not already excluded
+  if (link.host !== window.location.host && link.id !== 'desti' && !excludedUrls.some(url => link.href.includes(url))) {
+    var token = btoa(link.href); // Encode the href in base64
+    var newHref = 'https://www.infokeeda.xyz/?token=' + token;
+
+    // Add the new href value to the link
+    link.href = newHref;
+  }
+}
