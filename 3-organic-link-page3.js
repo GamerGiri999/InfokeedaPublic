@@ -49,7 +49,7 @@ gotolink.on("click", function() {
   var realurl = localStorage.getItem('three');
   window.location.href = atob(realurl);
   localStorage.removeItem('three');
-  document.cookie = "cookieName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 });
 	
 
