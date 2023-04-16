@@ -45,11 +45,13 @@ scrollTop: eval(gotolink.offset().top - 10)
 }, 100);  
 });	
 
-gotolink.on("click",function(){
-var realurl = localStorage.getItem('three');
-window.location.href= atob(realurl);
-localStorage.removeItem('three');
-});					
+gotolink.on("click", function() {
+  var realurl = localStorage.getItem('three');
+  window.location.href = atob(realurl);
+  localStorage.removeItem('three');
+  document.cookie = "cookieName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+});
+	
 
  const allowedDomains = ['www.infokeeda.xyz', 'example.com', 'infokeeda.xyz',]
 const currentDomain = window.location.hostname;
