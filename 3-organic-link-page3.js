@@ -41,7 +41,7 @@ gotolinkcountdown();
 request = true;		
 }
 $('html, body').animate({
-scrollTop: eval(gotolink.offset().top - 10)
+scrollTop: eval(gotolink.offset().top - 250)
 }, 100);  
 });	
 
