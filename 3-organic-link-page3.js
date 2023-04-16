@@ -9,7 +9,7 @@ if (localStorage.getItem('three') !== null) {
 wr.removeClass('hidden');
 infokeeda.pietimer({
   infokeedaSeconds: 10,
-  color: '#03a9f4',
+  color: 'var(--linkC)',
   fill: false,
   showPercentage: true,
   callback: function() {
