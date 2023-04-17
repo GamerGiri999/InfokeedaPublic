@@ -23,7 +23,6 @@ function gotolinkcountdown(){
 var countDown = 10;
 gotolink.removeClass('hidden');
 var x = setInterval(function() {
-
 var distance = countDown -= 1;
 gotolink.html('<span class="glyphicon glyphicon-time"></span> Please Wait...');
 if (distance < 0) {
@@ -42,18 +41,19 @@ request = true;
 }
 $('html, body').animate({
 scrollTop: eval(gotolink.offset().top - 250)
-}, 100);  
+}, 100); 
+ 
+  document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 });	
 
 gotolink.on("click", function() {
   var realurl = localStorage.getItem('three');
   window.location.href = atob(realurl);
   localStorage.removeItem('three');
-  document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  
 });
 	
-
- const allowedDomains = ['www.infokeeda.xyz', 'example.com', 'infokeeda.xyz',]
+const allowedDomains = ['www.infokeeda.xyz', 'example.com', 'infokeeda.xyz',]
 const currentDomain = window.location.hostname;
 
 if (!allowedDomains.includes(currentDomain)) {
