@@ -57,7 +57,7 @@ html {
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 .bg-purple{
-    background: url(http://salehriaz.com/404Page/img/bg_purple.png);
+    background: white;
     background-repeat: repeat-x;
     background-size: cover;
     background-position: left top;
