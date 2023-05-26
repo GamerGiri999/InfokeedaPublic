@@ -23,7 +23,7 @@ var button4 = document.getElementById("button4");
 	button4.addEventListener("click", function() {
 var realurl = cookieName;
 
-	localStorage.setItem("bloggerweeb", "developer");
+	localStorage.removeItem("bloggerweeb", "developer");
     button4.innerHTML = btn4txt + btn4timer + " seconds";
     button4.disabled = true;
 
