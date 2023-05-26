@@ -13,6 +13,7 @@ var button4 = document.getElementById("button4");
         // Show the "Go To Link" button
         countdownText.style.display = "none";
         button3.classList.remove("hidden");
+	      button4.classList.remove("hidden");
         clearInterval(countdownInterval);
       }
     }, 1000);
