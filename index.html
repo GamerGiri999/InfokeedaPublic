@@ -14,7 +14,43 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+  <script>
+ var image = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjgWQDcPuz8dOGRX3ivOb2_IA-Yh0O_-n-vQ7etgniV6Nn-AlIxYoUP2Tl2al5lmJZsefaXcjVm4iZuSEAB39loyBydyG4Y6ZgyymvasgZo13DoOFoCgAfUA3Meh0KKtoqGW07qmKKsSRYGUrkltuGir7CzH14ttXh_eamUHP-9JgzjNURjWDUPLxW-lM/s320/Screenshot_20230710-085218_Chrome.pnghttps://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjgWQDcPuz8dOGRX3ivOb2_IA-Yh0O_-n-vQ7etgniV6Nn-AlIxYoUP2Tl2al5lmJZsefaXcjVm4iZuSEAB39loyBydyG4Y6ZgyymvasgZo13DoOFoCgAfUA3Meh0KKtoqGW07qmKKsSRYGUrkltuGir7CzH14ttXh_eamUHP-9JgzjNURjWDUPLxW-lM/s320/Screenshot_20230710-085218_Chrome.png',
+bwtimer = 6000,
+expire = 30; 
 
+const url = window.location.search;
+const data = new URLSearchParams(url);
+var alias = data.get('twoken');
+console.log(alias);
+
+if (alias == "" || alias == null) {
+  
+} else {
+  document.cookie = "demo=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  var date = new Date();
+  date.setTime(date.getTime() + (60 * 3000));
+  var now = new Date();
+  var minutes = expire;
+  now.setTime(now.getTime() + (minutes * 60 * 1000));
+  document.cookie = "twoken=" + alias + ";" + "expires=" + now.toUTCString() + ";";
+
+  // Update bwLink with the current window location
+  bwLink = 'https://infokeeda.xyz/?twoken=' + alias;
+
+  if (image != null) {
+    if (image !== "") {
+      document.body.innerHTML = '<center><h1>Click On First Post Of Google Search</h1><img src="' + image + '"></center>';
+    }
+    setTimeout(function() {
+      window.location.href = bwLink;
+    }, bwtimer);
+  } else {
+    window.location.href = bwLink;
+  }
+}
+     
+      </script>
 <!--Header Section-->
 <section class="bg-purple pt-5 pb-6">
     <div class="container">
