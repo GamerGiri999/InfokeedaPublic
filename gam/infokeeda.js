@@ -25,15 +25,6 @@ googletag.cmd.push(function() {
   
 
 googletag.pubads().enableLazyLoad({fetchMarginPercent: -1});
-          
-                 // Register event handlers to observe lazy loading behavior.
-                       googletag.pubads().addEventListener(&#39;slotRequested&#39;, function(event) {
-                         updateSlotStatus(event.slot.getSlotElementId(), &#39;fetched&#39;);
-                       });
-               
-                       googletag.pubads().addEventListener(&#39;slotOnload&#39;, function(event) {
-                         updateSlotStatus(event.slot.getSlotElementId(), &#39;rendered&#39;);
-                       });
                
                       googletag.pubads (). setCentering (true);
   googletag.pubads().setTargeting('Test', ['refresh']);
