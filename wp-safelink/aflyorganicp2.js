@@ -1,4 +1,4 @@
-<script>
+
   if (localStorage.getItem("bloggerweeb")) {
     // Start the countdown timer
     var countdown = pg2timer1; // seconds
@@ -58,4 +58,4 @@ window.location.href = cookieName;
         
     });
   }
-</script>
+
