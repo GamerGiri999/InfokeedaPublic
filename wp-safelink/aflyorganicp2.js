@@ -5,7 +5,7 @@
     var countdownText = document.getElementById("countdownText");
     var button3 = document.getElementById("button3");
     var button4 = document.getElementById("button4");
-
+countdownText.classList.remove("hidden");
     var countdownInterval = setInterval(function() {
       countdown--;
       countdownText.textContent = "Please Wait " + countdown + " seconds";
