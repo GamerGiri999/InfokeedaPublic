@@ -38,12 +38,12 @@
     window.addEventListener("scroll", function() {
       if (isElementInViewport(button4)) {
         button4.disabled = true;
-        button4.innerHTML = "Please Wait for 8 seconds";
+        button4.innerHTML = btn4txt;
 
         setTimeout(function() {
           button4.disabled = false;
-          button4.innerHTML = "Your Default Button Text"; // Replace "Your Default Button Text" with the desired default text
-        }, 8000);
+          button4.innerHTML = btn4last; // Replace "Your Default Button Text" with the desired default text
+        }, btn4timer);
       }
     });
 
@@ -52,7 +52,7 @@
       var realurl = cookieName;
 
       
-      button4.disabled = false;
+      
 window.location.href = cookieName;
   
         
