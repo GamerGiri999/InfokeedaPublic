@@ -161,15 +161,5 @@ if (demoCookieValue !== '') {
 }
 
 }
-setInterval(function() {
-  if (document.getElementById('div-5').style.display === 'none') {
-    // Set the display property of the element with class "gAd" to none with !important
-    var gAdElement = document.querySelector('.gAd');
-    gAdElement.style.setProperty('display', 'none', 'important');
-
-    // Alert "No ad"
-    
-  }
-}, 1000); // Check every 1 second
 
 
