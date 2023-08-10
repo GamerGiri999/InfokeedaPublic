@@ -14,11 +14,11 @@ if (document.cookie.includes('twoken')) {
 
     <div class="gCn">
       <center>
-        <div id="div-5">
-          <script>
-            googletag.cmd.push(function() { googletag.display('div-5'); });
-          </script>
-        </div>
+        <div id="div-5" class='adx'>
+  <script>
+    googletag.cmd.push(function() {googletag.display('div-5');});
+  </script>
+</div>
       </center>
     </div>
   `;
