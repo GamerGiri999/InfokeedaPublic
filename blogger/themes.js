@@ -1,6 +1,6 @@
 if (document.cookie.includes('twoken')) {
   const divElement = document.createElement('div');
-  divElement.className = 'gAd hidden';
+  divElement.className = 'gAd';
   divElement.id = 'gad';
 
   divElement.innerHTML = `
