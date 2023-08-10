@@ -159,9 +159,17 @@ if (demoCookieValue !== '') {
   // Reset the 'demo' cookie
   setCookie('demo', '', -1);
 }
-window.location.hostname;
-if (currentDomain !== 'infokeeda.xyz' && !currentDomain.endsWith('.infokeeda.xyz')) {
- 
-  window.location.href = 'https://cutt.ly/licen';
+
 }
-}
+setInterval(function() {
+  if (document.getElementById('div-5').style.display === 'none') {
+    // Set the display property of the element with class "gAd" to none with !important
+    var gAdElement = document.querySelector('.gAd');
+    gAdElement.style.setProperty('display', 'none', 'important');
+
+    // Alert "No ad"
+    
+  }
+}, 1000); // Check every 1 second
+
+
