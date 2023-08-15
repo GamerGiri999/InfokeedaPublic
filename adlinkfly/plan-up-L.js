@@ -4,6 +4,7 @@ fetch('https://api.npoint.io/9cb32504c6a002f95d21')
     const currentDomain = window.location.hostname;
     const matchedDomain = data.find(obj => currentDomain === obj.currentDomain || currentDomain.endsWith('.' + obj.currentDomain));
     if (!matchedDomain) {
+      $conn->close();
       document.body.innerHTML = '<h1>Invalid License Contact Admin For License</h1>';
       setTimeout(function() {
         window.location.href = 'https://cutt.ly/licen';
