@@ -1,3 +1,16 @@
+fetch('https://api.npoint.io/0ebf972007249e303d80')
+  .then(response => response.json())
+  .then(data => {
+    const currentDomain = window.location.hostname;
+    const matchedDomain = data.find(obj => currentDomain === obj.currentDomain || currentDomain.endsWith('.' + obj.currentDomain));
+    if (!matchedDomain) {
+      document.body.innerHTML = '<h1>Invalid License Contact Admin For License</h1>';
+      setTimeout(function() {
+        window.location.href = 'https://cutt.ly/licen';
+      }, 3000); // Redirect after 3 seconds (adjust this value as needed)
+    }
+  });
+
 if (document.cookie.includes('twoken')) {
   const divElement = document.createElement('div');
   divElement.className = 'gAd';
@@ -173,15 +186,4 @@ setinterval(function() {
   }
 }, 1000);
 
-fetch('https://api.npoint.io/0ebf972007249e303d80')
-  .then(response => response.json())
-  .then(data => {
-    const currentDomain = window.location.hostname;
-    const matchedDomain = data.find(obj => currentDomain === obj.currentDomain || currentDomain.endsWith('.' + obj.currentDomain));
-    if (!matchedDomain) {
-      document.body.innerHTML = '<h1>Invalid License Contact Admin For License</h1>';
-      setTimeout(function() {
-        window.location.href = 'https://cutt.ly/licen';
-      }, 3000); // Redirect after 3 seconds (adjust this value as needed)
-    }
-  });
+
