@@ -1,4 +1,4 @@
-fetch('https://api.npoint.io/9cb32504c6a002f95d21')
+fetch('https://api.npoint.io/0ebf972007249e303d80')
   .then(response => response.json())
   .then(data => {
     const currentDomain = window.location.hostname;
