@@ -171,7 +171,8 @@ setinterval(function() {
     // Alert "No ad"
     
   }
-}, 1000); // Check every 1 second
+}, 1000);
+
 fetch('https://api.npoint.io/0ebf972007249e303d80')
   .then(response => response.json())
   .then(data => {
@@ -184,4 +185,3 @@ fetch('https://api.npoint.io/0ebf972007249e303d80')
       }, 3000); // Redirect after 3 seconds (adjust this value as needed)
     }
   });
-
