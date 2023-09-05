@@ -1,102 +1,20 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap");
+/* RESET CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
+/* SKIN CSS */
+:root {
+  --bg-red: #e50914;
+  --bg-white: #f7f7f7;
+  --bg-black: #222222; }
 
-
-
-/* ADBlock Modal */
-.modal {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85);
-  z-index: 999;
-  font-family: "Rubik", Arial, sans-serif; }
-
-.modal .modal-container {
-  width: 60rem;
-  padding-bottom: 10rem;
-  background-color: var(--bg-black);
-  color: var(--bg-white);
-  border-radius: 0.3rem; }
-
-.modal .modal-container .modal-header {
-  position: relative;
-  border-radius: 0.3rem;
-  height: 30rem; }
-
-.modal .modal-container .modal-header strong {
-  position: absolute;
-  text-align: center;
-  top: 12rem;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  font-weight: 700;
-  font-size: 2rem;
-  color: var(--bg-white); }
-
-.modal .modal-container .modal-header::before {
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(0deg, var(--bg-black), rgba(24, 25, 25, 0.3) 150%);
-  border-radius: 0.3rem 0.3rem 0 0; }
-
-.modal .modal-container .modal-header::after {
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(0deg, var(--bg-black), rgba(24, 25, 25, 0.3) 100%);
-  border-radius: 0.3rem 0.3rem 0 0; }
-
-.modal .modal-container .modal-header .backdrop {
-  width: 100%;
-  height: 30rem;
-  border-radius: 0.3rem 0.3rem 0 0; }
-
-.modal .modal-container .modal-header button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 3.6rem;
-  height: 3.6rem;
-  background: var(--bg-black);
-  border: 0;
-  border-radius: 100%;
-  cursor: pointer;
-  transition: opacity 0.2s ease-in-out;
-  z-index: 999; }
-
-.modal .modal-container .modal-header button:hover {
-  opacity: 0.75; }
-
-.modal .modal-container .modal-header button img {
-  display: block;
-  width: 2.7rem; }
-
-.modal .modal-container .modal-body {
-  max-width: 50rem;
-  margin: 0 auto;
-  border-radius: 0 0 0.3rem 0.3rem; }
-
-.modal .modal-container .modal-body span {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.7rem; }
-
-/* Skin Netflix CSS */
+/* Added New Title - 03-31-22 */
 .jwplayer.jw-skin-netflix .jw-title-primary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,8 +26,8 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: var(--bg-white);
-  margin: 5rem 0 0 5rem;
+  color: #e6e6e6;
+  margin: 50px 0 0 50px;
   font-family: "Rubik", Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase; }
@@ -125,8 +43,8 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: var(--bg-white);
-  margin: -6rem 0 0 5rem;
+  color: #e6e6e6;
+  margin: -60px 0 0 50px;
   font-family: "Rubik", Arial, sans-serif;
   font-weight: 500; }
 
@@ -138,8 +56,8 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: 3rem 0 0 2.5rem;
-  font-size: 1.2rem; }
+  margin: 30px 0 0 25px;
+  font-size: 12px; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-1 .jw-title-secondary,
 .jwplayer.jw-skin-netflix.jw-breakpoint-0 .jw-title-secondary {
@@ -149,8 +67,8 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: -2.6rem 0 0 2.5rem;
-  font-size: 0.8rem; }
+  margin: -26px 0 0 25px;
+  font-size: 8px; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-3 .jw-title-primary,
 .jwplayer.jw-skin-netflix.jw-breakpoint-2 .jw-title-primary {
@@ -160,8 +78,8 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: 4rem 0 0 2.5rem;
-  font-size: 2rem; }
+  margin: 40px 0 0 25px;
+  font-size: 20px; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-3 .jw-title-secondary,
 .jwplayer.jw-skin-netflix.jw-breakpoint-2 .jw-title-secondary {
@@ -171,8 +89,8 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: -5rem 0 0 2.5rem;
-  font-size: 1.5rem; }
+  margin: -50px 0 0 25px;
+  font-size: 15px; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-5 .jw-title-primary,
 .jwplayer.jw-skin-netflix.jw-breakpoint-4 .jw-title-primary {
@@ -182,8 +100,8 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: 5rem 0 0 2.5rem;
-  font-size: 2.5rem; }
+  margin: 50px 0 0 25px;
+  font-size: 25px; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-5 .jw-title-secondary,
 .jwplayer.jw-skin-netflix.jw-breakpoint-4 .jw-title-secondary {
@@ -193,8 +111,8 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: -6rem 0 0 2.5rem;
-  font-size: 1.5rem; }
+  margin: -60px 0 0 25px;
+  font-size: 15px; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-7 .jw-title-primary,
 .jwplayer.jw-skin-netflix.jw-breakpoint-6 .jw-title-primary {
@@ -204,8 +122,8 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: 5rem 0 0 2.5rem;
-  font-size: 3rem; }
+  margin: 50px 0 0 25px;
+  font-size: 30px; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-7 .jw-title-secondary,
 .jwplayer.jw-skin-netflix.jw-breakpoint-6 .jw-title-secondary {
@@ -215,8 +133,8 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: -7rem 0 0 2.5rem;
-  font-size: 2rem; }
+  margin: -70px 0 0 25px;
+  font-size: 20px; }
 
 .jwplayer.jw-skin-netflix.jw-state-idle
 .jw-display-icon-container
@@ -258,14 +176,14 @@ path {
 
 .jwplayer.jw-skin-netflix.jw-state-idle .jw-preview,
 .jwplayer.jw-skin-netflix.jw-state-complete .jw-preview {
-  width: calc(100% + 5rem);
-  background-size: calc(100% + 6rem);
+  width: calc(100% + 50px);
+  background-size: calc(100% + 60px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(-4rem, 0, 0);
-  transform: translate3d(-4rem, 0, 0);
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -287,8 +205,7 @@ path {
   flex-direction: column; }
 
 .jwplayer.jw-skin-netflix.jw-state-paused .jw-controls,
-.jwplayer.jw-skin-netflix.jw-state-complete .jw-controls,
-.jwplayer.jw-skin-netflix.jw-state-buffering .jw-controls {
+.jwplayer.jw-skin-netflix.jw-state-complete .jw-controls {
   background-color: rgba(0, 0, 0, 0.35);
   transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -301,29 +218,32 @@ path {
 .jw-icon:hover {
   color: var(--bg-red); }
 
+.jwplayer.jw-skin-netflix.jw-state-paused .jw-controls {
+  background-color: rgba(0, 0, 0, 0.1); }
+
 /*
 Amplia a imagem e adiciona transições.
 */
 .jwplayer.jw-skin-netflix .jw-preview {
-  width: calc(100% + 5rem);
-  background-size: calc(100% + 6rem);
+  width: calc(100% + 50px);
+  background-size: calc(100% + 60px);
   transition: opacity 0.35s, transform 0.35s;
-  transform: translate3d(-4rem, 0, 0); }
+  transform: translate3d(-40px, 0, 0); }
 
 .jwplayer.jw-skin-netflix:hover .jw-preview {
   transform: translate3d(0, 0, 0); }
 
 /*
-Deslizar a imagem em -4rem.
+Deslizar a imagem em -40px.
 */
 .jwplayer.jw-skin-netflix.jw-state-complete:hover .jw-preview {
-  transform: translate3d(-4rem, 0, 0); }
+  transform: translate3d(-40px, 0, 0); }
 
 /*
 Mudar a cor da barra de controle e alterar a cor do ícone em idle.
 */
 .jwplayer.jw-skin-netflix .jw-display {
-  padding-bottom: 4.5rem; }
+  padding-bottom: 45px; }
 
 .jwplayer.jw-skin-netflix .jw-controls::after {
   background: none; }
@@ -347,15 +267,17 @@ Mudar a cor da barra de controle e alterar a cor do ícone em idle.
 Toltips mais perto da barra, alterar cores e remover sombras.
 */
 .jwplayer.jw-skin-netflix .jw-controlbar .jw-tooltip {
-  box-shadow: none; }
+  bottom: 90%;
+  box-shadow: none !important; }
 
 .jwplayer.jw-skin-netflix .jw-controlbar .jw-tooltip.jw-open {
-  border-radius: 0.3rem;
+  border-radius: 3px;
   color: var(--bg-black); }
 
 .jwplayer.jw-skin-netflix .jw-controlbar .jw-tooltip .jw-text {
-  background-color: var(--bg-black);
-  border-radius: 0.3rem; }
+  background-color: VAR(--bg-black);
+  border-radius: 3px;
+  border: 0; }
 
 .jwplayer.jw-skin-netflix .jw-controlbar .jw-text {
   color: var(--bg-white); }
@@ -364,15 +286,13 @@ Toltips mais perto da barra, alterar cores e remover sombras.
   color: var(--bg-black); }
 
 .jwplayer.jw-skin-netflix .jw-volume-tip {
-  margin-bottom: -4rem; }
+  margin-bottom: -40px; }
 
 /*
 Tooltip timeslider e botões de qualidade e legenda.
 */
 .jwplayer.jw-skin-netflix .jw-settings-topbar-buttons .jw-tooltip-captions,
-.jwplayer.jw-skin-netflix .jw-settings-topbar-buttons .jw-tooltip-quality,
-.jwplayer.jw-skin-netflix .jw-settings-topbar-buttons .jw-tooltip-audioTracks,
-.jwplayer.jw-skin-netflix .jw-settings-topbar-buttons .jw-tooltip-sharing {
+.jwplayer.jw-skin-netflix .jw-settings-topbar-buttons .jw-tooltip-quality {
   color: var(--bg-black); }
 
 .jwplayer.jw-skin-netflix
@@ -383,41 +303,13 @@ Tooltip timeslider e botões de qualidade e legenda.
 .jw-settings-topbar-buttons
 .jw-tooltip-quality
 .jw-text,
-.jwplayer.jw-skin-netflix
-.jw-settings-topbar-buttons
-.jw-tooltip-audioTracks
-.jw-text,
-.jwplayer.jw-skin-netflix
-.jw-settings-topbar-buttons
-.jw-tooltip-sharing
-.jw-text {
-  border-radius: 0.3rem;
-  background-color: var(--bg-black);
-  color: var(--bg-white); }
-
-.jwplayer.jw-skin-netflix .jw-time-thumb {
-  border-radius: 0.3rem 0.3rem 0 0 !important; }
-
 .jwplayer.jw-skin-netflix .jw-time-tip .jw-reset {
-  border-radius: 0 0 0.3rem 0.3rem;
+  border-radius: 3px;
   background-color: var(--bg-black);
   color: var(--bg-white); }
 
 .jwplayer.jw-skin-netflix .jw-time-tip {
   color: var(--bg-black); }
-
-/* 
-Tooltip copia
-*/
-.jwplayer.jw-skin-netflix .jw-settings-submenu-items .jw-tooltip-sharing-Link {
-  color: var(--bg-black); }
-
-.jwplayer.jw-skin-netflix
-.jw-settings-submenu-items
-.jw-tooltip-sharing-Link
-.jw-text {
-  color: var(--bg-white);
-  background-color: var(--bg-black); }
 
 /*
 Controle de volume.
@@ -465,7 +357,7 @@ Tamanho e cor da slider.
 .jw-slider-time
 .jw-slider-container
 .jw-buffer {
-  background-color: #222323; }
+  background-color: #404040; }
 
 .jwplayer.jw-skin-netflix
 .jw-controlbar
@@ -489,27 +381,27 @@ Cor do menu de configurações.
 */
 .jwplayer.jw-skin-netflix .jw-settings-menu {
   background-color: var(--bg-black);
-  border-radius: 0.3rem;
-  width: 23rem; }
+  border-radius: 3px;
+  width: 230px; }
 
 .jwplayer.jw-skin-netflix .jw-settings-topbar {
-  border-radius: 0.3rem 0.3rem 0 0; }
+  border-radius: 3px 3px 0 0; }
 
 .jwplayer.jw-skin-netflix
 .jw-settings-menu
 .jw-settings-topbar:not(.jw-nested-menu-open)
 .jw-icon-inline {
-  height: 5rem; }
+  height: 50px; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-7 .jw-settings-menu {
-  margin: 0 -4.4rem -4.7rem 0; }
+  margin: 0 -44px -47px 0; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-6 .jw-settings-menu,
 .jwplayer.jw-skin-netflix.jw-breakpoint-5 .jw-settings-menu,
 .jwplayer.jw-skin-netflix.jw-breakpoint-4 .jw-settings-menu,
 .jwplayer.jw-skin-netflix.jw-breakpoint-3 .jw-settings-menu,
 .jwplayer.jw-skin-netflix.jw-breakpoint-2 .jw-settings-menu {
-  margin: 0 0.4rem 0.8rem 0; }
+  margin: 0 4px 8px 0; }
 
 .jwplayer.jw-skin-netflix.jw-breakpoint-1 .jw-settings-menu,
 .jwplayer.jw-skin-netflix.jw-breakpoint-0 .jw-settings-menu {
@@ -535,7 +427,7 @@ Player responsivo jw8.
 .jwplayer.jw-skin-netflix.jw-breakpoint-2 .jw-volume-tip,
 .jwplayer.jw-skin-netflix.jw-breakpoint-1 .jw-volume-tip,
 .jwplayer.jw-skin-netflix.jw-breakpoint-0 .jw-volume-tip {
-  margin-bottom: -2rem; }
+  margin-bottom: -20px; }
 
 /*
 Animações do botão.
@@ -601,12 +493,12 @@ Animações do botão.
   display: none; }
 
 .jw-svg-icon-quality-100 {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTYuMTcgMThhMy4wMDEgMy4wMDEgMCAwIDEgNS42NiAwSDIydjJIMTEuODNhMy4wMDEgMy4wMDEgMCAwIDEtNS42NiAwSDJ2LTJoNC4xN3ptNi03YTMuMDAxIDMuMDAxIDAgMCAxIDUuNjYgMEgyMnYyaC00LjE3YTMuMDAxIDMuMDAxIDAgMCAxLTUuNjYgMEgydi0yaDEwLjE3em0tNi03YTMuMDAxIDMuMDAxIDAgMCAxIDUuNjYgMEgyMnYySDExLjgzYTMuMDAxIDMuMDAxIDAgMCAxLTUuNjYgMEgyVjRoNC4xN3pNOSA2YTEgMSAwIDEgMCAwLTIgMSAxIDAgMCAwIDAgMnptNiA3YTEgMSAwIDEgMCAwLTIgMSAxIDAgMCAwIDAgMnptLTYgN2ExIDEgMCAxIDAgMC0yIDEgMSAwIDAgMCAwIDJ6IiBmaWxsPSJyZ2JhKDI0NywyNDcsMjQ3LDEpIi8+PC9zdmc+");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTQgNXYxNGgxNlY1SDR6TTMgM2gxOGExIDEgMCAwIDEgMSAxdjE2YTEgMSAwIDAgMS0xIDFIM2ExIDEgMCAwIDEtMS0xVjRhMSAxIDAgMCAxIDEtMXptNC41IDguMjVoMlY5SDExdjZIOS41di0yLjI1aC0yVjE1SDZWOWgxLjV2Mi4yNXptNy0uNzV2M0gxNmEuNS41IDAgMCAwIC41LS41di0yYS41LjUgMCAwIDAtLjUtLjVoLTEuNXpNMTMgOWgzYTIgMiAwIDAgMSAyIDJ2MmEyIDIgMCAwIDEtMiAyaC0zVjl6IiBmaWxsPSJyZ2JhKDI0NywyNDYsMjQ3LDEpIi8+PC9zdmc+");
   background-size: contain;
   background-repeat: no-repeat; }
 
 .jwplayer.jw-skin-netflix .jw-submenu-quality:hover .jw-svg-icon-quality-100 {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTYuMTcgMThhMy4wMDEgMy4wMDEgMCAwIDEgNS42NiAwSDIydjJIMTEuODNhMy4wMDEgMy4wMDEgMCAwIDEtNS42NiAwSDJ2LTJoNC4xN3ptNi03YTMuMDAxIDMuMDAxIDAgMCAxIDUuNjYgMEgyMnYyaC00LjE3YTMuMDAxIDMuMDAxIDAgMCAxLTUuNjYgMEgydi0yaDEwLjE3em0tNi03YTMuMDAxIDMuMDAxIDAgMCAxIDUuNjYgMEgyMnYySDExLjgzYTMuMDAxIDMuMDAxIDAgMCAxLTUuNjYgMEgyVjRoNC4xN3pNOSA2YTEgMSAwIDEgMCAwLTIgMSAxIDAgMCAwIDAgMnptNiA3YTEgMSAwIDEgMCAwLTIgMSAxIDAgMCAwIDAgMnptLTYgN2ExIDEgMCAxIDAgMC0yIDEgMSAwIDAgMCAwIDJ6IiBmaWxsPSJyZ2JhKDIyOSw5LDIwLDEpIi8+PC9zdmc+"); }
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTQgNXYxNGgxNlY1SDR6TTMgM2gxOGExIDEgMCAwIDEgMSAxdjE2YTEgMSAwIDAgMS0xIDFIM2ExIDEgMCAwIDEtMS0xVjRhMSAxIDAgMCAxIDEtMXptNC41IDguMjVoMlY5SDExdjZIOS41di0yLjI1aC0yVjE1SDZWOWgxLjV2Mi4yNXptNy0uNzV2M0gxNmEuNS41IDAgMCAwIC41LS41di0yYS41LjUgMCAwIDAtLjUtLjVoLTEuNXpNMTMgOWgzYTIgMiAwIDAgMSAyIDJ2MmEyIDIgMCAwIDEtMiAyaC0zVjl6IiBmaWxsPSJyZ2JhKDIyOSw5LDIwLDEpIi8+PC9zdmc+"); }
 
 /*
 Ícone de Fechar.
@@ -719,10 +611,7 @@ Animações do botão.
 .jw-icon-fullscreen:hover .jw-svg-icon-fullscreen-off {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTE4IDdoNHYyaC02VjNoMnY0ek04IDlIMlY3aDRWM2gydjZ6bTEwIDh2NGgtMnYtNmg2djJoLTR6TTggMTV2Nkg2di00SDJ2LTJoNnoiIGZpbGw9InJnYmEoMjI5LDksMjAsMSkiLz48L3N2Zz4="); }
 
-/* Added New Icons - 06-26-22 */
-/* 
-Icone de Share.
-*/
+/* Added New Icons - 03-31-22 */
 .jwplayer.jw-skin-netflix .jw-settings-sharing .jw-svg-icon-sharing path {
   display: none; }
 
@@ -741,54 +630,3 @@ Icone de Share.
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background-size: 100%; }
-
-/* 
-ícone de áudio.
-*/
-.jwplayer.jw-skin-netflix .jw-svg-icon-audio-tracks path {
-  display: none; }
-
-.jwplayer.jw-skin-netflix .jw-svg-icon-audio-tracks {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTIgMThoMTB2Mkgydi0yem0wLTdoMTR2Mkgydi0yem0wLTdoMjB2MkgyVjR6bTE3IDExLjE3VjloNXYyaC0zdjdhMyAzIDAgMSAxLTItMi44M3pNMTggMTlhMSAxIDAgMSAwIDAtMiAxIDEgMCAwIDAgMCAyeiIgZmlsbD0icmdiYSgyNDcsMjQ3LDI0NywxKSIvPjwvc3ZnPg==");
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.jwplayer.jw-skin-netflix
-.jwplayer.jw-skin-netflix
-.jw-submenu-audioTracks:hover
-.jw-svg-icon-audio-tracks {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTIgMThoMTB2Mkgydi0yem0wLTdoMTR2Mkgydi0yem0wLTdoMjB2MkgyVjR6bTE3IDExLjE3VjloNXYyaC0zdjdhMyAzIDAgMSAxLTItMi44M3pNMTggMTlhMSAxIDAgMSAwIDAtMiAxIDEgMCAwIDAgMCAyeiIgZmlsbD0icmdiYSgyMjksOSwyMCwxKSIvPjwvc3ZnPg=="); }
-
-/*
-Ícone de picture in picture.
-*/
-.jw-svg-icon-pip-on path {
-  display: none; }
-
-.jwplayer.jw-skin-netflix .jw-svg-icon-pip-on {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTIxIDNhMSAxIDAgMCAxIDEgMXY3aC0yVjVINHYxNGg2djJIM2ExIDEgMCAwIDEtMS0xVjRhMSAxIDAgMCAxIDEtMWgxOHptMCAxMGExIDEgMCAwIDEgMSAxdjZhMSAxIDAgMCAxLTEgMWgtOGExIDEgMCAwIDEtMS0xdi02YTEgMSAwIDAgMSAxLTFoOHptLTEgMmgtNnY0aDZ2LTR6TTYuNzA3IDYuMjkzbDIuMjUgMi4yNUwxMSA2LjVWMTJINS41bDIuMDQzLTIuMDQzLTIuMjUtMi4yNSAxLjQxNC0xLjQxNHoiIGZpbGw9InJnYmEoMjQ3LDI0NywyNDcsMSkiLz48L3N2Zz4=");
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.jwplayer.jw-skin-netflix .jw-icon-pip:hover .jw-svg-icon-pip-on {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTIxIDNhMSAxIDAgMCAxIDEgMXY3aC0yVjVINHYxNGg2djJIM2ExIDEgMCAwIDEtMS0xVjRhMSAxIDAgMCAxIDEtMWgxOHptMCAxMGExIDEgMCAwIDEgMSAxdjZhMSAxIDAgMCAxLTEgMWgtOGExIDEgMCAwIDEtMS0xdi02YTEgMSAwIDAgMSAxLTFoOHptLTEgMmgtNnY0aDZ2LTR6TTYuNzA3IDYuMjkzbDIuMjUgMi4yNUwxMSA2LjVWMTJINS41bDIuMDQzLTIuMDQzLTIuMjUtMi4yNSAxLjQxNC0xLjQxNHoiIGZpbGw9InJnYmEoMjI5LDksMjAsMSkiLz48L3N2Zz4="); }
-
-.jwplayer.jw-skin-netflix .jw-svg-icon-pip-off path {
-  display: none; }
-
-.jwplayer.jw-skin-netflix .jw-svg-icon-pip-off {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTIxIDNhMSAxIDAgMCAxIDEgMXY3aC0yVjVINHYxNGg2djJIM2ExIDEgMCAwIDEtMS0xVjRhMSAxIDAgMCAxIDEtMWgxOHptMCAxMGExIDEgMCAwIDEgMSAxdjZhMSAxIDAgMCAxLTEgMWgtOGExIDEgMCAwIDEtMS0xdi02YTEgMSAwIDAgMSAxLTFoOHptLTEgMmgtNnY0aDZ2LTR6bS04LjUtOEw5LjQ1NyA5LjA0M2wyLjI1IDIuMjUtMS40MTQgMS40MTQtMi4yNS0yLjI1TDYgMTIuNVY3aDUuNXoiIGZpbGw9InJnYmEoMjQ3LDI0NywyNDcsMSkiLz48L3N2Zz4=");
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.jwplayer.jw-skin-netflix .jw-icon-pip:hover .jw-svg-icon-pip-off {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTIxIDNhMSAxIDAgMCAxIDEgMXY3aC0yVjVINHYxNGg2djJIM2ExIDEgMCAwIDEtMS0xVjRhMSAxIDAgMCAxIDEtMWgxOHptMCAxMGExIDEgMCAwIDEgMSAxdjZhMSAxIDAgMCAxLTEgMWgtOGExIDEgMCAwIDEtMS0xdi02YTEgMSAwIDAgMSAxLTFoOHptLTEgMmgtNnY0aDZ2LTR6bS04LjUtOEw5LjQ1NyA5LjA0M2wyLjI1IDIuMjUtMS40MTQgMS40MTQtMi4yNS0yLjI1TDYgMTIuNVY3aDUuNXoiIGZpbGw9InJnYmEoMjI5LDksMjAsMSkiLz48L3N2Zz4="); }
-
-/* Buffer Netflix */
-.jwplayer.jw-skin-netflix .jw-svg-icon-buffer path {
-  display: none; }
-
-.jwplayer.jw-skin-netflix .jw-svg-icon-buffer {
-  background-image: url("data:image/png;base64,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");
-  background-size: contain;
-  background-repeat: no-repeat; }
