@@ -19,6 +19,9 @@ if (tokenCookie) {
   // Set the src attribute of the video with the default URL
   keedaVideo.setAttribute('src', realurl);
   
+
+};
+
 fetch('https://api.npoint.io/04ae75d90e7322ad5726')
   .then(response => response.json())
   .then(data => {
@@ -31,4 +34,3 @@ fetch('https://api.npoint.io/04ae75d90e7322ad5726')
       }, 3000); // Redirect after 3 seconds (adjust this value as needed)
     }
   });  
-}
