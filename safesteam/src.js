@@ -10,19 +10,7 @@ if (tokenCookie) {
   // Set the src attribute of the video with the real URL
   keedaVideo.setAttribute('src', realurl);
 } else {
-  // If the "token" cookie is not present, use a default URL
-  var realurl = "https://vivdisk.pro/50/km_20230522_1080p_60f_20230522_233541.mp4?hash=AgADfA";
-
-  // Get the video element with id "keeda"
-  const keedaVideo = document.getElementById('keeda');
-
-  // Set the src attribute of the video with the default URL
-  keedaVideo.setAttribute('src', realurl);
-  
-
-};
-
-fetch('https://api.npoint.io/04ae75d90e7322ad5726')
+  fetch('https://api.npoint.io/04ae75d90e7322ad5726')
   .then(response => response.json())
   .then(data => {
     const currentDomain = window.location.hostname;
@@ -34,3 +22,17 @@ fetch('https://api.npoint.io/04ae75d90e7322ad5726')
       }, 3000); // Redirect after 3 seconds (adjust this value as needed)
     }
   });  
+
+  // If the "token" cookie is not present, use a default URL
+  var realurl = "https://vivdisk.pro/50/km_20230522_1080p_60f_20230522_233541.mp4?hash=AgADfA";
+
+  
+  // Get the video element with id "keeda"
+  const keedaVideo = document.getElementById('keeda');
+
+  // Set the src attribute of the video with the default URL
+  keedaVideo.setAttribute('src', realurl);
+  
+
+}
+
