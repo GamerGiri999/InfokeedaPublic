@@ -1,5 +1,6 @@
-var timer1 = 25,
+var timer1 = 20,
 gotolink = $("#gotolink"),
+getlink = $("#getlink"),	
 timer2 = 8;
 	
 if (document.cookie.includes('twoken')) {
@@ -91,10 +92,10 @@ observer.observe(element);
 
 
 // Event listener for button click
- getlinkButton.click(function() {
+ getlink.click(function() {
 
  $('html, body').animate({
- scrollTop: eval(gotolinkElement.offset().top - 10)
+ scrollTop: eval(gotolink.offset().top - 10)
  }, 250);  
  });	
 
