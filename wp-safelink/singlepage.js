@@ -1,6 +1,6 @@
-var timer1 = 3,
+var timer1 = 25,
 gotolink = $("#gotolink"),
-timer2 = 5;
+timer2 = 8;
 	
 if (document.cookie.includes('twoken')) {
     var dgtimer = document.getElementById('dgtimer');
