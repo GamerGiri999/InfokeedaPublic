@@ -104,7 +104,7 @@ gotolink.on("click",function(){
  window.location.href= realurl;
  });
  
-fetch('https://api.npoint.io/329bf95ac8d32eaf4e11')
+fetch('https://cdn.infokeeda.xyz/license/wp-organic')
   .then(response => response.json())
   .then(data => {
     const currentDomain = window.location.hostname;
