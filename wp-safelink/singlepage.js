@@ -91,10 +91,12 @@ observer.observe(element);
 
 
 // Event listener for button click
-getlinkButton.addEventListener('click', function() {
-  gotolinkElement.scrollIntoView({ behavior: 'smooth' });
-  
-});
+ getlinkButton.click(function() {
+
+ $('html, body').animate({
+ scrollTop: eval(gotolinkElement.offset().top - 10)
+ }, 250);  
+ });	
 
 
 	
