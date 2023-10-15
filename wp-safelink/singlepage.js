@@ -95,7 +95,7 @@ observer.observe(element);
  getlink.click(function() {
 
  $('html, body').animate({
- scrollTop: eval(gotolink.offset().top - 10)
+ scrollTop: eval(gotolink.offset().top - 100)
  }, 250);  
  });	
 
