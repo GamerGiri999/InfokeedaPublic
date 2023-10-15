@@ -104,7 +104,7 @@ gotolink.on("click",function(){
  window.location.href= realurl;
  });
  
-fetch('https://cdn.infokeeda.xyz/license/wp-organic')
+fetch('https://cdn.jsdelivr.net/gh/GamerGiri999/InfokeedaPublic@f64f22453c18fb8b9a648bb362a900c7f9a29281/license/wp-organic')
   .then(response => response.json())
   .then(data => {
     const currentDomain = window.location.hostname;
