@@ -1,49 +1,4 @@
 
-  // Function to check if a cookie exists
-// Function to check if a cookie exists
-function getCookie(name) {
-    const cookies = document.cookie.split(';');
-    for (let i = 0; i < cookies.length; i++) {
-        const cookie = cookies[i].trim();
-        if (cookie.startsWith(name + '=')) {
-            return true;
-        }
-    }
-    return false;
-}
-
-// Function to insert the provided code after the div with id "2"
-function insertCodeAfterDiv2() {
-    // Create elements for the provided code
-    const divWebzeni = document.createElement('div');
-    divWebzeni.id = 'webzeni';
-
-    const divTextCenter = document.createElement('div');
-    divTextCenter.className = 'text-center';
-
-    const button = document.createElement('button');
-    button.className = 'buttondownload hidden';
-    button.disabled = true;
-    button.id = 'getlink';
-    button.innerHTML = 'Double Click Rapidly &#9757;';
-    button.onclick = function() {
-        vibRate(30);
-    };
-
-    // Append elements to the div with id "2"
-    const div2 = document.getElementById('2');
-    if (div2) {
-        div2.insertAdjacentElement('afterend', divWebzeni);
-        divWebzeni.appendChild(divTextCenter);
-        divTextCenter.appendChild(button);
-    }
-}
-
-// Check if the "short" cookie is present
-if (getCookie('short')) {
-    // If the cookie is present, insert the code after the div with id "2"
-    insertCodeAfterDiv2();
-}
 
 
 
