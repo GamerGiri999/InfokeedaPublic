@@ -1,7 +1,5 @@
 
-
-
-
+  // Function to check if a cookie exists
   function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
@@ -14,8 +12,7 @@
   // If the cookie is present, insert the code after the button with id "getlink"
   if (shortCookie) {
     const scriptCode = `
-     
-      <!-- /23033789617/Inarticle -->
+      
       <div id='div-gpt-ad-1711212645310-0' style='min-width: 200px; min-height: 50px;'>
         <script>
           googletag.cmd.push(function() { googletag.display('div-gpt-ad-1711212645310-0'); });
@@ -33,5 +30,3 @@
     // Insert the code after the button
     button.parentNode.insertBefore(tempDiv, button.nextSibling);
   }
-
-
