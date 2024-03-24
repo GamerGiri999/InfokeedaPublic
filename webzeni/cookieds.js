@@ -35,27 +35,18 @@
 
 // Check if the cookie named "short" is present
 if (document.cookie.indexOf("short") !== -1) {
-    // Create the elements to be inserted
-    var adContainer = document.createElement('div');
-    adContainer.setAttribute('id', 'div-gpt-ad-1711300124662-0');
-    adContainer.setAttribute('style', 'min-width: 250px; min-height: 50px;');
+    // Create the div element with the provided code
+    var adDiv = document.createElement('div');
+    adDiv.setAttribute('id', 'div-gpt-ad-1711300124662-0');
+    adDiv.setAttribute('style', 'min-width: 250px; min-height: 50px;');
+    adDiv.innerHTML = `
+      <script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1711300124662-0'); });
+      </script>
+    `;
     
-    var adScript = document.createElement('script');
-    adScript.innerHTML = "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1711300124662-0'); });";
-    
-    // Find the element with id "bottom"
     var divBottom = document.getElementById('bottom');
     
-    // Check if the "bottom" div exists
-    if (divBottom) {
-        // Insert the ad container and script before the div with id "bottom"
-        divBottom.parentNode.insertBefore(adContainer, divBottom);
-    } else {
-        // If the "bottom" div doesn't exist, insert at the end of the document body
-        document.body.appendChild(adContainer);
-    }
-    
-    // Append the script to the ad container
-    adContainer.appendChild(adScript);
+    // Insert the created element below the div with id "bottom"
+    divBottom.parentNode.insertBefore(adDiv, divBottom.nextSibling);
 }
-
