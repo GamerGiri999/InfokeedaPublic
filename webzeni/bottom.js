@@ -47,7 +47,7 @@ return decodeURI(results[1]) || 0;
 var getlink = $("#getlink"),
     finalLinks = [
         "https://www.webzeni.com/2024/01/how-team-usas-size-challenge-led-to.html",
-         "https://www.webzeni.com/2024/01/alabama-footballs-coach-nick-saban.html",
+         "https://www.webzeni.com/2023/08/fitness-trends-and-innovations-staying.html",
          "https://www.webzeni.com/2024/01/fall-handprint-and-footprint-crafts.html",
         // Add more final links here if needed
     ],
