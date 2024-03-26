@@ -1,22 +1,16 @@
 window.googletag = window.googletag || {cmd: []};
 googletag.cmd.push(function() {
-    // Define slots
-    var slot1 = googletag.defineSlot('/23033789617/bottom', [[250,250],[300,250]], 'div-5').addService(googletag.pubads());
-    var slot2 = googletag.defineSlot('/23033789617/bottom2', [[250,250],[300,250]], 'div-5').addService(googletag.pubads());
+    // Define multiple slots
+    var slots = [
+        googletag.defineSlot('/23033789617/bottom', [[250,250],[300,250]], 'div-5'),
+        googletag.defineSlot('/23033789617/bottom2', [[250,250],[300,250]], 'div-5')
+    ];
 
-    // Choose a random index
-    var randomIndex = Math.floor(Math.random() * 2); // 2 is the number of slots
+    // Shuffle the array of slots
+    shuffle(slots);
 
-    // Enable the selected slot
-    if (randomIndex === 0) {
-        slot1.setCollapseEmptyDiv(true);
-        slot1.setForceSafeFrame(true);
-        slot1.setCentering(true);
-    } else {
-        slot2.setCollapseEmptyDiv(true);
-        slot2.setForceSafeFrame(true);
-        slot2.setCentering(true);
-    }
+    // Use the first slot
+    slots[0].addService(googletag.pubads());
 
     // Enable other pubads configurations
     googletag.pubads().enableSingleRequest();
@@ -27,3 +21,14 @@ googletag.cmd.push(function() {
     // Enable services
     googletag.enableServices();
 });
+
+// Function to shuffle an array
+function shuffle(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
