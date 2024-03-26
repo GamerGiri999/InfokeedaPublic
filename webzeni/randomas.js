@@ -1,16 +1,18 @@
 window.googletag = window.googletag || {cmd: []};
 googletag.cmd.push(function() {
-    // Define multiple slots
-    var slots = [
-        googletag.defineSlot('/23033789617/bottom', [[250,250],[300,250]], 'div-5'),
-        googletag.defineSlot('/23033789617/bottom2', [[250,250],[300,250]], 'div-5')
+    // Define slots
+    var slotDefinitions = [
+        { name: '/23033789617/bottom', sizes: [[250,250],[300,250]], divId: 'div-5' },
+        { name: '/23033789617/bottom2', sizes: [[250,250],[300,250]], divId: 'div-5' }
     ];
 
-    // Shuffle the array of slots
-    shuffle(slots);
+    // Choose a random slot definition
+    var randomIndex = Math.floor(Math.random() * slotDefinitions.length);
+    var selectedSlot = slotDefinitions[randomIndex];
 
-    // Use the first slot
-    slots[0].addService(googletag.pubads());
+    // Define the selected slot
+    googletag.defineSlot(selectedSlot.name, selectedSlot.sizes, selectedSlot.divId)
+               .addService(googletag.pubads());
 
     // Enable other pubads configurations
     googletag.pubads().enableSingleRequest();
@@ -21,14 +23,3 @@ googletag.cmd.push(function() {
     // Enable services
     googletag.enableServices();
 });
-
-// Function to shuffle an array
-function shuffle(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-    return array;
-}
