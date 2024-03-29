@@ -15,7 +15,7 @@ if (document.cookie.includes('twoken')) {
     <div class="gCn">
       <center>
         
- <div class="separator" style="clear: both; text-align: center; height: 300px; width 400px:"><a href="https://wwp.hopfors.com/redirect-zone/5710d96b" style="margin-left: 0em; margin-right: 1em;" target="_blank"><img border="0" data-original-height="349" data-original-width="415"
+ <div class="separator" style="clear: both; text-align: center; height: 300px; width 400px:"><a href="https://cauliflowertoaster.com/iwzuppjceh?key=3e3c5dd12cbaf64abd6acf2f626a4b27" style="margin-left: 0em; margin-right: 1em;" target="_blank"><img border="0" data-original-height="349" data-original-width="415"
 
  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguSfWmjRuerDhTWfEvV--7cWbALMe43zdI5XTIGW6hUOKYlQvUN9ALeq2tWrx6kPXMGq6qa4pjFWBVaNzHsViYwIHXu-4YGxNFuTV2qk77t5v2CNG_98xO-Wjk-ocOcjSJaoc_R_dREu1wCDiVth5MNi6l-pSa_o57K1dY8KJQNVrVxwIO6NLYMqtLPw/s1080/IMG_20230515_130359_513.jpg" /></a></div>
 </div>
