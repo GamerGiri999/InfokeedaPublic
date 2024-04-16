@@ -44,11 +44,11 @@ return decodeURI(results[1]) || 0;
 
 
 
-var getlink = $("#getlink"),
+var getlink = document.getElementById("getlink"),
     finalLinks = [
         "https://uniquepadhai.in/investment-fundamentals-a-comprehensive-beginners-guide/",
-         "https://uniquepadhai.in/trade-credit-insurance-mitigating-commercial-risks-in-global-business/",
-         "https://uniquepadhai.in/business-interruption-insurance-safeguarding-against-the-unexpected/",
+        "https://uniquepadhai.in/trade-credit-insurance-mitigating-commercial-risks-in-global-business/",
+        "https://uniquepadhai.in/business-interruption-insurance-safeguarding-against-the-unexpected/"
         // Add more final links here if needed
     ],
     finalIndex = Math.floor(Math.random() * finalLinks.length),
@@ -68,18 +68,18 @@ var getlink = $("#getlink"),
     p2btn2txt = 'Double Click For Link',
     btn2timer = 5, //buutn2 timer
     piecolor = 'var(--linkC)',
-    button1 = $("#button1"),
-    timer2 = $(".timer2"),
-    timer1 = $(".timer1"),
-    button2 = $("#button2"),
-    btn = $("#btn"),
-    gotolink = $("#gotolink"),
-    wr = $("#wr"),
-    webzeni = $('#webzeni'),
-    btn = $('#btn'),
-    btnn = $('#getlink'),
-    btnn2 = $('#gotolink'),
+    button1 = document.getElementById("button1"),
+    timer2 = document.querySelector(".timer2"),
+    timer1 = document.querySelector(".timer1"),
+    button2 = document.getElementById("button2"),
+    btn = document.getElementById("btn"),
+    gotolink = document.getElementById("gotolink"),
+    wr = document.getElementById("wr"),
+    webzeni = document.getElementById('webzeni'),
+    btnn = document.getElementById('getlink'),
+    btnn2 = document.getElementById('gotolink'),
     adlinkfly = '';
+
 
 
 
